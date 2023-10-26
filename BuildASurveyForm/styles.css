@@ -34,11 +34,13 @@ fieldset {
 label {
 	display:block;
 	margin: 0.5rem 0;
+	border-radius: 4px;
 }
 
 input {
 	margin: 10px 0 0 0;
 	width: 50%;
+	border-radius: 4px;
 }
 
 input, textarea, select {
@@ -49,6 +51,7 @@ input, textarea, select {
 
 textarea {
 	height: 50px;
+	border-radius: 4px;
 }
 
 .inline {
