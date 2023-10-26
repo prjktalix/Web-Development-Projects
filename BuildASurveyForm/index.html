@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Survey Form</title>
+    <link ref="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <h1 id="title">Anime Survey Form</h1>
+    <p id="description">Thank you for taking your time participating my survey</p>
+    <form id="survey-form" method="post" action="/submit-survey"> 
+    <fieldset>
+        <label for="name" id="name-label">Name <input type="text" id="name" name="name" placeholder="Enter your name" value="name" required /></label>
+        <label for="email" id="email-label">Email <input type="email" id="email" name="email" placeholder="Enter your Email" value="email" required/></label>
+        <label for="number" id="number-label">Age(optional) <input type="number" id="number" min="8" max="120" name="number" placeholder="Enter your Age" value="age" /></label>    
+    </fieldset>
+    <fieldset>
+        <legend>How long have you been watching anime?</legend>
+        <label for="option-one"><input type="radio" name="years" value="option1">0-1 years</label>
+            <label for="option-two"><input type="radio" name="years" value="option2">2-3 years</label>
+            <label for="option-three"><input type="radio" name="years" value="option3">3+ years</label>
+    </fieldset>
+    <fieldset>
+        <label>What is your favorite dark-trio anime?
+            <select id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Chainsaw Man</option>
+                <option value="2">Jujutsu Kaisen</option>
+                <option value="3">Hell's Paradise</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>Have you watched these animes? (Check all that apply)</label>
+        <label for="cb1"><input type="checkbox" id="cb1" value="1">Dragon Ball</label>
+        <label for="cb2"><input type="checkbox" id="cb2" value="2">One Piece</label>
+        <label for="cb3"><input type="checkbox" id="cb3" value="3">Naruto</label>
+        <label for="cb4"><input type="checkbox" id="cb4" value="4">Demon Slayer</label>
+        <label for="cb5"><input type="checkbox" id="cb5" value="5">Pokemon</label>
+        <label for="cb6"><input type="checkbox" id="cb6" value="6">Death Note</label>
+        <label for="cb7"><input type="checkbox" id="cb7" value="7">Attack on Titan</label>
+        <label for="cb8"><input type="checkbox" id="cb8" value="8">Jojo's Bizarre Adventure</label>
+        <label for="cb9"><input type="checkbox" id="cb9" value="9">Gundam</label>
+        <label for="cb10"><input type="checkbox" id="cb10" value="10">Yu-Gi-Oh!</label>
+    </fieldset>
+    <fieldset>
+        <label for="why">What is your favorite anime and why? 
+            <textarea id="why" name="why" row="3" cols="30" placeholder="Describe..."></textarea>
+        </label>
+    </fieldset>
+    <input type="submit" id="submit" value="submit"/>
+    </form>
+</body>
+</html>
